@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Communications Weighting Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Communications Weighting Tool</h1>
+
+  <form id="weightingForm">
+    <label for="ministerial">Ministerial Priority (1–5)</label>
+    <select id="ministerial">
+      <option value="">--Select--</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <label for="public">Public Interest (1–5)</label>
+    <select id="public">
+      <option value="">--Select--</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <label for="time">Time Sensitivity (1–5)</label>
+    <select id="time">
+      <option value="">--Select--</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <label for="alignment">Strategic Alignment (A–C)</label>
+    <select id="alignment">
+      <option value="">--Select--</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+    </select>
+
+    <label for="resources">Resource Requirements (1–3)</label>
+    <select id="resources">
+      <option value="">--Select--</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <label for="special">Special Circumstances</label>
+    <select id="special">
+      <option value="">--Select--</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <button type="button" onclick="calculateScore()">Calculate Score</button>
+  </form>
+
+  <div id="result"></div>
+  <div id="urgency" class="urgencyBox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
